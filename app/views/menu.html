@@ -9,6 +9,15 @@
                 <button ng-click="menu.decrement(item)">-</button>
             </p>
 
+            <div class="well">
+                <select ng-model="item.meal" name="" id="">
+                    <option value="breakfast">Breakfast</option>
+                    <option value="lunch">Lunch</option>
+                    <option value="dinner">Dinner</option>
+                </select>
+                <button ng-click="menu.chooseItem(item.meal, item.name)">Select Item</button>
+            </div>
+
             <!--<p>Image: {{ item.img }}</p>-->
 
             <!--<p>
