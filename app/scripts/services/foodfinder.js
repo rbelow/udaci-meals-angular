@@ -27,4 +27,9 @@ angular.module('udaciMealsApp')
     this.getMenu = function() {
         return $.get('http://localhost:9000/menu/menu.json');
     };
+
+    this.getItem = function(id) {
+        var menuItemFile = '/menu/' + id + '.json';
+        return $.get(menuItemFile);
+    };
   });

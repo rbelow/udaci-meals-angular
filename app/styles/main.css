@@ -91,3 +91,7 @@ body {
 .item_image {
     max-width: 228px;
 }
+
+.item__image {
+    max-width: 700px;
+}
