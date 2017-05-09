@@ -1,6 +1,18 @@
 {
   "name": "udaci-meals-angular",
-  "private": true,
+  "version": "1.0.0",
+  "description": "AngularJS weekly meal scheduler app",
+  "engines": {
+    "node": "6.10.2"
+  },
+  "main": "web.js",
+  "scripts": {
+    "start": "node web.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2",
+    "gzippo": "^0.2.0"
+  },
   "devDependencies": {
     "autoprefixer-core": "^5.2.1",
     "grunt": "^0.4.5",
@@ -28,12 +40,5 @@
     "jit-grunt": "^0.9.1",
     "time-grunt": "^1.0.0",
     "jshint-stylish": "^1.0.0"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "dependencies": {
-    "express": "^4.15.2",
-    "gzippo": "^0.2.0"
   }
 }
