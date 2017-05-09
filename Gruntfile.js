@@ -254,10 +254,12 @@ module.exports = function (grunt) {
     },
 
     // Performs rewrites based on filerev and the useminPrepare configuration
+    // NOTE Change here the image references in `.json` files
     usemin: {
       html: ['<%= yeoman.dist %>/{,*/}*.html'],
       css: ['<%= yeoman.dist %>/styles/{,*/}*.css'],
       js: ['<%= yeoman.dist %>/scripts/{,*/}*.js'],
+      json: ['<%= yeoman.dist %>/menu/{,*/}*.json'],
       options: {
         assetsDirs: [
           '<%= yeoman.dist %>',
@@ -265,7 +267,8 @@ module.exports = function (grunt) {
           '<%= yeoman.dist %>/styles'
         ],
         patterns: {
-          js: [[/(images\/[^''""]*\.(png|jpg|jpeg|gif|webp|svg))/g, 'Replacing references to images']]
+          js: [[/(images\/[^''""]*\.(png|jpg|jpeg|gif|webp|svg))/g, 'Replacing references to images']],
+          json: [[/(images\/[^''""]*\.(png|jpg|jpeg|gif|webp|svg))/g, 'Replacing references to images']]
         }
       }
     },
@@ -369,6 +372,7 @@ module.exports = function (grunt) {
     },
 
     // Copies remaining files to places other tasks can use
+    // NOTE Copy here the `/menu` folder
     copy: {
       dist: {
         files: [{
