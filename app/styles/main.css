@@ -82,7 +82,11 @@ body {
   }
 }
 
-/**/
+/* Custom udaciMeals style */
+.day {
+    cursor: pointer;
+}
+
 .highlight {
     color: green;
     font-style: italic;
