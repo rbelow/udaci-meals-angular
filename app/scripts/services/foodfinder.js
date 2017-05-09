@@ -25,7 +25,7 @@ angular.module('udaciMealsApp')
      * https://discussions.udacity.com/t/update-view-when-json-has-been-loaded/199950/4?u=rbelow
      */
     this.getMenu = function() {
-        return $.get('http://localhost:9000/menu/menu.json');
+        return $.get('menu/menu.json');
     };
 
     this.getItem = function(id) {

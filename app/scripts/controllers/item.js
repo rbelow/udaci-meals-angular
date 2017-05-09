@@ -9,7 +9,7 @@
  */
 angular.module('udaciMealsApp')
   .controller('ItemCtrl', ['$stateParams', 'foodFinder', function ($stateParams, foodFinder) {
-      // viewmodel local scope
+      // view-model local scope
       var vm = this;
 
       foodFinder.getItem($stateParams.id).then(function(data) {
